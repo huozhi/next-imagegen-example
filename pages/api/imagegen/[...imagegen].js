@@ -11,7 +11,7 @@ const options = {
 }
 
 export default handler(
-  process.env.NODE_ENV === 'production' ? 
+  process.env.VERCEL_REGION ? 
     defaultProvider(options) : 
     provider(options)
 )
