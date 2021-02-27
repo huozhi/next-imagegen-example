@@ -1,10 +1,15 @@
-import { handler, provider } from 'next-plugin-imagegen'
+import { handler, provider as defaultProvider } from 'next-plugin-imagegen'
+import { provider } from 'next-plugin-imagegen-puppeteer'
 
-export default handler(provider({
+const options = {
   viewport: {
     x: 8,
     y: 8,
     width: 240,
     height: 100,
   }
-}))
+}
+
+export default handler(
+  process.env.VERCEL ? defaultProvider(options) : provider(options)
+)

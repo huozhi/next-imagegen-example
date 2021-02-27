@@ -1,35 +1,25 @@
-const imageStyles = {
-  userSelect: 'none',
-  width: 500,
-  margin: '0 40px',
-  alignSelf: 'center',
-}
+import styles from './index.module.css'
 
 export default function App() {
   return (
-    <div 
-      style={{
-        margin: 0, background: 'rgb(14, 14, 14)', width: '100vw', height: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
-      }}
-    >
-      <div style={{display: 'flex', justifyContent: 'center'}}>
+    <div className={styles.root}>
+      <div className={styles.container}>
         <img
-          style={imageStyles}
+          className={styles.image}
           src="/logo/microlink.image"
         />
-        <div style={{fontSize: '100px', alignSelf: 'center', color: '#fff'}}>&times;</div>
+        <div style={{fontSize: '100px', alignSelf: 'center'}}>&times;</div>
         <img
-          style={imageStyles}
+          className={styles.image}
           src="/logo/vercel.image"
         />
       </div>
-      <a style={{color: '#fff', display: 'block', margin: '40px', textAlign: 'center'}} href="https://github.com/huozhi/imagegen-logo-previews">
-        github.com/huozhi/imagegen-logo-previews
-      </a>
+      <div className={styles.link}>
+        Source:
+        <a className={styles.anchor} href="https://github.com/huozhi/imagegen-logo-previews">
+          github.com/huozhi/imagegen-logo-previews
+        </a>
+      </div>
     </div>
   )
 }
