@@ -2667,10 +2667,10 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-plugin-imagegen-puppeteer@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/next-plugin-imagegen-puppeteer/-/next-plugin-imagegen-puppeteer-0.3.3.tgz#6f5928c95cc1a730b41908b934ed4fdba49337f2"
-  integrity sha512-g8A9m0haHJ4Ks05xhTSOgp0h6o5W1FRYHFMG+hjjEx9D5NvshajmMR3/OtzY/NJWeEPDZytBAUi0ImcVLlknWg==
+next-plugin-imagegen-puppeteer@0.3.4-0:
+  version "0.3.4-0"
+  resolved "https://registry.npmjs.org/next-plugin-imagegen-puppeteer/-/next-plugin-imagegen-puppeteer-0.3.4-0.tgz#b03dd691538ed75052acc01aaba23785367477bb"
+  integrity sha512-8QzDeC8Al8mPyZO7i5LqEBZW3MdUZCDTL/x1OEy0RGzodEgUJYDV0ZsHW054gu7HLpWjyYyIxKfBLyVJQR2gDw==
   dependencies:
     browserless "8.7.10"
 
