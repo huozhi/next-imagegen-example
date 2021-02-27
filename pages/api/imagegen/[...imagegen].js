@@ -1,4 +1,5 @@
-import { handler, provider } from 'next-plugin-imagegen'
+import { handler, provider as defaultProvider } from 'next-plugin-imagegen'
+import { provider } from 'next-plugin-imagegen-puppeteer'
 
 const options = {
   viewport: {
@@ -11,6 +12,6 @@ const options = {
 
 export default handler(
   process.env.NODE_ENV === 'production' ? 
-    provider(options) : 
-    require('next-plugin-imagegen-puppeteer').provider(options)
+    defaultProvider(options) : 
+    provider(options)
 )
