@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import Field from '../components/field'
 import Input from '../components/input'
 import Image from '../components/image'
@@ -22,6 +23,7 @@ export default function Vercel() {
   const [url, setUrl] = useState(genUrl(params))
   return (
     <div className="container">
+      <Link href='/'><a className="page-back">{`/ 👈`}</a></Link>
       <h1 className="page-title">Generate Vercel Images</h1>
       <div className="app">
         <div className="split">

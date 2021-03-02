@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import styles from './github.module.css'
 import Field from '../components/field'
 import Input from '../components/input'
@@ -17,7 +18,10 @@ export default function Github() {
   const [url, setUrl] = useState(generateUrl(params))
   return (
     <div className="container">
-      <h1 className="page-title">Generate Next.js User Card</h1>
+      <Link href='/'><a className="page-back">{`/ 👈`}</a></Link>
+      <h1 className="page-title">
+        Generate Next.js User Card
+      </h1>
       <div className="app">
         <div className="split">
           <div className="pull-left">

@@ -18,6 +18,15 @@ html, body {
   text-align: center;
 }
 
+.page-back {
+  margin-right: auto;
+  text-decoration: none;
+  font-size: 60px;
+  position: absolute;
+  top: 0px;
+  cursor: pointer;
+}
+
 .split {
   display: flex;
   justify-content: center;
