@@ -2,11 +2,13 @@ import { useState } from 'react'
 import styles from './github.module.css'
 import Field from '../components/field'
 import Input from '../components/input'
+import Image from '../components/image'
 import { param } from '../utils'
 
 const generateUrl = (params) => param(`/card/github.image`, params)
 
 export default function Github() {
+  const [isLoading, setIsLoading] = useState(false)
   const [uname, setUname] = useState('ghost')
   const [fullname, setFullname] = useState('Mr. Ghost')
   const [job, setJob] = useState('Developer')
@@ -33,7 +35,13 @@ export default function Github() {
                 <Input value={company} onChange={(e) => setCompany(e.target.value)} />
               </Field>
               <Field>
-                <button className="button" onClick={() => setUrl(generateUrl(params))}>
+                <button 
+                  className="button" 
+                  onClick={() => {
+                    const imageUrl = generateUrl(params)
+                    setUrl(imageUrl)
+                  }}
+                >
                   Generate
                 </button>
               </Field>
@@ -42,10 +50,7 @@ export default function Github() {
           
           <div className="pull-right">
             <div className={styles.image}>
-              {url ?
-                <img src={url} /> :
-                <div className={styles.placeholder} />
-              }
+              <Image src={url} />
             </div>
           </div>
         </div>

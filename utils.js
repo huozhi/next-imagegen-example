@@ -9,3 +9,12 @@ export function param(basePath, params = {}) {
   }
   return query ? basePath + '?' + query : basePath
 }
+
+export function loadImage(src) {
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.onload = resolve
+    img.onerror = reject
+    img.src = src
+  })
+}

@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import styles from './vercel.module.css'
 import Field from '../components/field'
 import Input from '../components/input'
+import Image from '../components/image'
+import styles from './vercel.module.css'
 
 function genUrl(params = {}) {
   const basePath = `/logo/vercel.image`
@@ -39,10 +40,7 @@ export default function Vercel() {
           
           <div className="pull-right">
             <div className={styles.image}>
-              {url ?
-                <img src={url} /> :
-                <div className={styles.placeholder} />
-              }
+              <Image src={url} />
             </div>
           </div>
         </div>
