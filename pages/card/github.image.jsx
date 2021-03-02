@@ -2,9 +2,9 @@ import styles from './github.image.module.css'
 
 export default function GithubProfile({
   name = 'huozhi', 
-  fullname = 'Jiachi Liu',
-  company = 'Home',
-  title = 'Web Developer',
+  fullname,
+  company = 'Earth',
+  job = 'Developer',
 }) {
   return (
     <div className={styles.root}>
@@ -28,13 +28,13 @@ export default function GithubProfile({
           </div>
           <div style={{marginTop: 'auto'}}>
             <div className={styles.divider} />
-            <div style={{fontSize: 30}}>{`@${name}`}</div>
+            <div style={{fontSize: `30px`}}>{`@${name}`}</div>
           </div>
         </div>
         <div className={styles.info}>
-          <div>{fullname}</div>
-          <div style={{fontSize: 24}}>
-            <span style={{color: `#444`}}>{`${title} @ `}</span>
+          <div>{fullname || name}</div>
+          <div style={{fontSize: `24px`, marginTop: `8px`}}>
+            <span style={{color: `#444`}}>{`${job} @ `}</span>
             <span>{company}</span>
           </div>
         </div>

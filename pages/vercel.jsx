@@ -3,7 +3,6 @@ import styles from './vercel.module.css'
 import Field from '../components/field'
 import Input from '../components/input'
 
-
 function genUrl(params = {}) {
   const basePath = `/logo/vercel.image`
   let query = ''
@@ -42,14 +41,12 @@ export default function Vercel() {
             <div className={styles.image}>
               {url ?
                 <img src={url} /> :
-                <div className={styles.imagePlaceholder} />
+                <div className={styles.placeholder} />
               }
             </div>
           </div>
-          
         </div>
       </div>
-      
     </div>
   )
 }
