@@ -1,0 +1,7 @@
+.ul {
+  list-style: none;
+}
+
+.link, .link:active, .link:visited {
+  color: #000;
+}
