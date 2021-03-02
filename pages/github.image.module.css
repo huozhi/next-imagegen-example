@@ -1,0 +1,61 @@
+.root {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+}
+
+.card {
+  position: relative;
+  width: 560px;
+  height: 240px;
+  padding: 0 36px;
+  background: #000;
+  color: #fff;
+  margin: auto;
+  justify-self: center;
+  align-self: center;
+  border-radius: 16px;
+  display: grid;
+}
+
+.card::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -6px;
+  border-radius: inherit;
+  background: linear-gradient(345deg, #ca485c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+  z-index: -1;
+}
+
+.profile {
+  justify-self: stretch;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  /* transform: translate(-10px, -50px); */
+}
+
+.divider {
+  background: linear-gradient(90deg,#ec6192 4.44%,#ec4c34 21.45%,#ffbd2b 37.21%,#ebde56 54.63%,#57c754 70.8%,#53a1eb 84.07%) 0 100% transparent no-repeat;
+  border-radius: 3px;
+  width: 160px;
+  height: 6px;
+  margin: 4px 0;
+}
+
+.info {
+  font-size: 16px;
+}
+
+.info svg {
+  fill: #fff;
+  vertical-align: text-bottom;
+  margin-right: 2px;
+}
