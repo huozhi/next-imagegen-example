@@ -1,0 +1,5 @@
+.image[data-loading="true"] {
+  background: rgba(211, 211, 211, 0.233);
+  filter: blur(5px);
+  opacity: 0.1;
+}

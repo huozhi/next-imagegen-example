@@ -1,8 +1,15 @@
 .root {
+  margin: auto;
+  width: 1200px;
+  height: 630px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  width: 240px;
-  height: 100px;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(5);
 }
