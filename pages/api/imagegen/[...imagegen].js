@@ -1,5 +1,4 @@
 import { handler, provider as defaultProvider } from 'next-plugin-imagegen'
-import { provider } from 'next-plugin-imagegen-puppeteer'
 
 const options = {
   viewport: {
@@ -10,8 +9,4 @@ const options = {
   }
 }
 
-export default handler(
-  process.env.VERCEL_REGION ? 
-    defaultProvider(options) : 
-    provider(options)
-)
+export default handler(defaultProvider(options))
