@@ -1,6 +1,6 @@
 import styles from './logo.module.css'
 
-export default function MicrolinkLogo() {
+export default function MicrolinkImage() {
   return (
     <div className={styles.root}>
       <div className={styles.inner}>

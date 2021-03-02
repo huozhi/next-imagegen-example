@@ -1,0 +1,22 @@
+.root {
+  margin: auto;
+  width: 1200px;
+  height: 630px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  background-image: radial-gradient(circle at 25px 25px, lightgray 2%, transparent 0%), radial-gradient(circle at 75px 75px, lightgray 2%, transparent 0%);
+  background-size: 100px 100px;
+}
+
+.logo svg {
+  width: 200px;
+}
+
+.title {
+  font-size: 60px;
+  color: #000;
+  margin-top: 80px;
+}
