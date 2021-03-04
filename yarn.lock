@@ -2674,10 +2674,10 @@ next-plugin-imagegen-puppeteer@0.3.5:
   dependencies:
     browserless "8.7.10"
 
-next-plugin-imagegen@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/next-plugin-imagegen/-/next-plugin-imagegen-0.3.2.tgz#ea6044c4c2cebf462a4f472a6ce6b32995853af7"
-  integrity sha512-LF0OSoP32jC0JAnHnBwzgbz9U8JrqsP6x+U9ZgMyc1mr5+htu2OUzMxYzpPc1v/5k02SpcKNrF/wrZ1s/WWqCw==
+next-plugin-imagegen@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.npmjs.org/next-plugin-imagegen/-/next-plugin-imagegen-0.4.0.tgz#ed037e04ae297404848a98fd8dcc032da25c8482"
+  integrity sha512-v/7yFCL6SzRQDyejeGyukOwPejZEj+aXkAxvc152z3sdCMb+cIftJvIn4XNpX7iEsqvyTdfudpQO/p3J0hnMlQ==
   dependencies:
     "@microlink/mql" "0.8.2"
 
