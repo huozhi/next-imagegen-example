@@ -1,4 +1,4 @@
-import { handler, provider as defaultProvider } from 'next-plugin-imagegen'
+import { handler/*, provider as defaultProvider*/ } from 'next-plugin-imagegen'
 import { provider } from 'next-plugin-imagegen-puppeteer'
 
 const options = {
@@ -9,7 +9,7 @@ const options = {
 }
 
 export default handler(
-  process.env.NODE_ENV === 'development' ?
-    provider(options) :
-    defaultProvider(options)
+  // process.env.NODE_ENV === 'development' ?
+    provider(options) // :
+    // defaultProvider(options)
 )
