@@ -5,6 +5,10 @@ const options = {
   viewport: {
     width: 1200,
     height: 630,
+    deviceScaleFactor: 1,
+    isMobile: false,
+    hasTouch: false,
+    isLandscape: false
   }
 }
 
