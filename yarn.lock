@@ -2667,17 +2667,17 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-plugin-imagegen-puppeteer@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/next-plugin-imagegen-puppeteer/-/next-plugin-imagegen-puppeteer-0.4.0.tgz#7fb7d6949ae2716bf6895af683d1a7351a55e241"
-  integrity sha512-cf2J1kQXivnWTF8lLvglmya+y9Ve0tS77XSSXBGjvkYJ1lRoZM/Hgrptf9wQEvd7Cocfc8yaPoKLlC1URxmR/Q==
+next-plugin-imagegen-puppeteer@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npmjs.org/next-plugin-imagegen-puppeteer/-/next-plugin-imagegen-puppeteer-0.5.0.tgz#6c68a453631fe05768ba053eb7a4cc015309de90"
+  integrity sha512-hWBdVhjfTZgH2ZhLTesIJnTBIIEUKozW7zPVh6qwOx3p5XHiSeBF8kor7+qTxhCyz15fJK1C9iDbEah7nMZ1Bg==
   dependencies:
     browserless "8.7.10"
 
-next-plugin-imagegen@~0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/next-plugin-imagegen/-/next-plugin-imagegen-0.4.2.tgz#5b200287dde18abe0f4d0370536fad87287cca39"
-  integrity sha512-IRQUQEq7YBDZiAIwTllbKEGd89qYakAjXbjYMjR/dLgneqEFn6ZtlSx7vWMjeXxmcUKn99JTNO8RbDXE6/qn2g==
+next-plugin-imagegen@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npmjs.org/next-plugin-imagegen/-/next-plugin-imagegen-0.5.0.tgz#f2a8dfeaf7c91b7fd4ecd01f9faa4f967b4cb624"
+  integrity sha512-eTe3TiJ8p//aLy4G9yxLDw6EDmEnUpnfpXBQ1De9HEC1MQOHSD/Ekfs2ErQK/S8yVw/cWx4OqLakbSpVa862tw==
   dependencies:
     "@microlink/mql" "0.8.2"
 
